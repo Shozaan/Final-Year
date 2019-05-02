@@ -1,29 +1,13 @@
 @extends('layouts.app')
 @section('content')
-
-    <div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/image1.jpg" height="500px" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/image2.jpg" height="500px" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/image3.jpg" height="500px"  alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+<div class="container" >
+    <h1>Enjoy Live Music</h1>
+    <div class=wrapper>
+        <Video Autoplay Controls>
+            <Source src="vidoes/vidoe1.mp4" type="video/mp4">
+        </video>
     </div>
+</div>
     <div class="banner">
         <p><b>Visit Kathmandu City of Glory!<b><p>
     </div>

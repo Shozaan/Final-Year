@@ -1,240 +1,137 @@
-@extends('layouts.app')
-@section('content')
-<div class="thamel">
-    <img class="thamel1" src="images/image55.jpg">
-    <div class="thameltag">
-        <h1><b>Thamel</b></h1>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Image Modal</h2>
+<p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
+<p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
+
+<img id="myImg" src="images/image1.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg" src="images/image2.jpg" alt="a" style="width:100%;max-width:300px">
+<img id="myImg" src="images/image3.jpg" alt="b" style="width:100%;max-width:300px">
+<img id="myImg" src="images/image4.jpg" alt="c" style="width:100%;max-width:300px">
+<img id="myImg" src="images/image5.jpg" alt="d" style="width:100%;max-width:300px">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
-<div class="thamelinfo">
-    <h1>A buzzing, visitor-friendly area, Thamel is the city’s main nightlife zone. 
-    Bars blast out live music by cover bands, and lively eateries serve Nepalese and international dishes.</h1>
-</div>
-<div class="head1">
-    <h1><b>Things to do in Thamel<b></h1>
-</div>
-<div class="shop1">
-    <div class="thamelshop">
-        <div class ="thamelimg1">
-            <img class="bigimg" src="images/image34.jpg">
-        </div>
-    </div>
-    <div class="shopinfo">
-        <p>Shopping in thamel</p>
-    </div>
-</div>
-<div class="fourlink">
-    <div class="boxone">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image36.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://www.pashminainnepal.com/" class="align-self-end">
-                <span class="boxone3">Buy real Pashmina</span> 
-                <h6 class="boxone4">Visit shop</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxtwo">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image37.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="http://www.skhandicraftnepal.com/" class="align-self-end">
-                <span class="boxone3">Buy handmade handicrafts</span> 
-                <h6 class="boxone4">Visit shop</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxthree">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image38.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://oxfordcraft.com/" class="align-self-end">
-                <span class="boxone3">Buy handknitted garments</span> 
-                <h6 class="boxone4">Visit shop</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxfour">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image39.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://oxfordcraft.com/" class="align-self-end">
-                <span class="boxone3">Buy handknitted garments</span> 
-                <h6 class="boxone4">Visit shop</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="shop1">
-    <div class="thamelshop">
-        <div class ="thamelimg1">
-            <img class="bigimg" src="images/image40.jpg">
-        </div>
-    </div>
-    <div class="shopinfo">
-        <p>Enjoy the Night</p>
-    </div>
-</div>
-<div class="fourlink">
-<div class="boxone">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image41.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="http://shishaterrace.com/#!" class="align-self-end">
-                <span class="boxone3">Sisha lounge and Bar</span> 
-                <h6 class="boxone4">Watch us</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxtwo">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image42.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://reggae-bar-thamel-live-music-bar.business.site/website/reggae-bar-thamel-live-music-bar/" class="align-self-end">
-                <span class="boxone3">Reggae Bar Thamel</span> 
-                <h6 class="boxone4">Watch us</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxthree">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image43.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://www.facebook.com/PurpleHazekathmandu/" class="align-self-end">
-                <span class="boxone3">Purple haze Bar</span> 
-                <h6 class="boxone4">Watch us</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxfour">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image44.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://www.facebook.com/pages/Sams-Bar/424337494243719" class="align-self-end">
-                <span class="boxone3">Sams Bar</span> 
-                <h6 class="boxone4">Watch us</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="shop1">
-    <div class="thamelshop">
-        <div class ="thamelimg1">
-            <img class="bigimg" src="images/image45.jpg">
-        </div>
-    </div>
-    <div class="shopinfo">
-        <p>Have a Good Night</p>
-    </div>
-</div>
-<div class="fourlink">
-    <div class="boxone">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image46.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="http://www.oasiskathmanduhotel.com/" class="align-self-end">
-                <span class="boxone3">Oasis Hotel</span> 
-                <h6 class="boxone4">Book Now</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxtwo">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image47.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://www.hotelsapanagarden.com/" class="align-self-end">
-                <span class="boxone3">Hotel Sapna Garden</span> 
-                <h6 class="boxone4">Book Now</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxthree">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image48.jfif" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://www.hotelthemilestone.com/book-now/" class="align-self-end">
-                <span class="boxone3">The Milestone Hotel</span> 
-                <h6 class="boxone4">Book Now</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxfour">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image49.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://www.kumariboutiquehotel.com/reservation" class="align-self-end">
-                <span class="boxone3">Kumari Botuique Hotel</span> 
-                <h6 class="boxone4">Book Now</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="shop1">
-    <div class="thamelshop">
-        <div class ="thamelimg1">
-            <img class="bigimg" src="images/image50.jpg">
-        </div>
-    </div>
-    <div class="shopinfo">
-        <p>Let's Relax</p>
-    </div>
-</div>
-<div class="fourlink">
-    <div class="boxone">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image51.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="http://qfxcinemas.com/Content/QFX-Chhaya-Center?me=22" class="align-self-end">
-                <span class="boxone3">Qfx Chhaya Centre</span> 
-                <h6 class="boxone4">Book Now</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxtwo">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image52.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://www.nepalmassage.com/" class="align-self-end">
-                <span class="boxone3">Real Therapy and Beauty Point</span> 
-                <h6 class="boxone4">Visit us</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxthree">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image53.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://chhayacenter.com/" class="align-self-end">
-                <span class="boxone3">Chhaya Centre</span> 
-                <h6 class="boxone4">Visit shop</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="boxfour">
-        <div class="boxone1">
-            <img class="card-img img-fluid" src="images/image54.jpg" alt="" style="height:240px; width:240px;">
-            <div class="boxone2">
-                <a href="https://roadhouse.com.np/book-a-table" class="align-self-end">
-                <span class="boxone3">RoadHouse Cafe</span> 
-                <h6 class="boxone4">Book table</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>

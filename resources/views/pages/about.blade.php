@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    <h1>News</h1>
     <style>
         div.gallery {
             margin: 5px;
@@ -27,7 +26,7 @@
     <body>
 
     <div class="container">
-<h3 class="text-center">Latest Stories.<small></small></h3>
+<h1>Latest Stories</h1>
 <hr>
 <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6  py-0 pl-3 pr-1 featcard">
@@ -167,8 +166,70 @@
 });
 </script>
 
+<h1>Trending</h1>
 <div>
-   <iframe width="1100px" height="400px" src="https://www.youtube.com/embed/IhFqxOfLA7M?autoplay=1">
-</iframe>
+  <img class="avenger" src="images/image125.jpg">
 </div>
+<div class="trendlink">
+  <p><a class="trending" href="https://thehimalayantimes.com/entertainment/avengers-endgame-obliterates-records-with-1-2b-opening/"><b>1. </b>‘Avengers: Endgame’ obliterates records with $1.2B opening</a></p>
+  <p><a class="trending" href="https://www.eonline.com/ap/news/1036783/maisie-williams-reveals-what-you-didn-t-see-when-arya-stark-saved-the-day-on-game-of-thrones"><b>2. </b>Arya stark saved the day on Game of thrones</a></p>
+  <p><a class="trending" href="https://myrepublica.nagariknetwork.com/mycity/news/drake-breaks-taylor-swift-s-record-at-billboard-music-awards"><b>3. </b>Drake breaks Taylor Swift’s record at Billboard Music Awards</a></p>
+  <p><a class="trending" href="https://myrepublica.nagariknetwork.com/mycity/news/first-plus-size-male-pageant-in-nepal"><b>4. </b>First plus size Male  pageant in Nepal</a></p>
+  <p><a class="trending" href="https://myrepublica.nagariknetwork.com/mycity/news/fans-disappointed-with-dal-bhat-tarkari-s-new-item-song-antibiotic-khaula"><b>5. </b>Fans disappointed with Dal Bhat Tarkari's new item song ‘Antibiotic Khaula’</a></p>
+</div>
+<div class="container" >
+    <h1>Watch</h1>
+    <div class=wrapper1>
+        <Video Autoplay Controls>
+            <Source src="vidoes/video1.mp4" type="video/mp4">
+        </video>
+        <div class="videoinfo">
+          <p>Movie "Jatrai Jatrai" filled with like of heavy cast like Dayahang Rai, Bipin Karki, Barsha Raut and Rabindra and Rabindra Jha dropped their first trailer.<p>
+        </div>
+    </div>
+</div>
+<div class="nextvideo">
+<h1>Other Videos</h1>
+  <div class="wrapper2">
+        <Video Autoplay Controls>
+            <Source src="vidoes/video2.mp4" type="video/mp4">
+        </video>
+        <div class="videoinfo1">
+          <p>Bradley Copper and Lady Gaga performance in Oscar left all audience speechless.<p>
+        </div>
+    </div>
+    <div class="wrapper3">
+        <Video Autoplay Controls>
+            <Source src="vidoes/video3.mp4" type="video/mp4">
+        </video>
+        <div class="videoinfo1">
+          <p>This new rap song from Yodha capturing the attention of all youth.<p>
+        </div>
+    </div>
+</div>
+<h1>Others<h1>
+<div class="news1">
+  <img class="newsimg" src="images/image126.jpg">
+  <div class="newsinfo">
+    <p><a class="newsinfo1" href="https://www.glamournepal.net/nepathya-to-perform-in-panchthar-phidim"><b>1. </b>Nepathya to perform in Panchthar, Phidim</a></p>
+    <p>Nepal’s premier folk-rock band, Nepathya, is all set to perform concert in Phidim, Panchthar...<p>
+  </div>
+</div>
+<div class="news1">
+  <img class="newsimg" src="images/image127.jpg">
+  <div class="newsinfo">
+    <p><a class="newsinfo1" href="https://www.glamournepal.net/underside-to-perform-at-uks-premier-rock-festival"><b>2. </b>Underside to Perform at UK’s Premier Rock Festival</a></p>
+    <p>Kathmandu-based metal-core band Underside will be performing at UK’s premier rock festival...<p>
+  </div>
+</div>
+<div class="news1">
+  <img class="newsimg" src="images/image128.jpg">
+  <div class="newsinfo">
+    <p><a class="newsinfo1" href="https://www.glamournepal.net/journalist-anup-ojha-and-the-next-come-together-with-a-friendship-anthem"><b>3. </b>Journalist Anup Ojha and The NEXT Come Together with a Friendship Anthem</a></p>
+    <p>The music video of Wari ko Dada Ma Ma…, which celebrates the childhood friendship between two...<p>
+  </div>
+</div>
+<!-- <p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.31625953402!2d85.29111306836396!3d27.708955944365407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu+44600!5e0!3m2!1sen!2snp!4v1556811360172!5m2!1sen!2snp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</p> -->
 @endsection

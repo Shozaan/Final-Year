@@ -10511,7 +10511,7 @@ a.text-dark:focus {
 
 .wrapper{
     margin:0 auto;
-    width: 1000px;
+    width: 1100px;
   }
   
   video{
@@ -10815,4 +10815,96 @@ margin-left: 548px;
 	margin-left:860px;
 	margin-top: -305px;
 	/*margin-bottom: 310px;*/
+}
+.avenger{
+	height:350px;
+	width: 600px;
+}
+.trendlink{
+	margin-left: 620px;
+	margin-top: -350px;
+	color: white;
+	font-size: 22px;
+	text-align: justify;
+}
+.trending:hover{
+	color: red;
+}
+.wrapper1 video{
+	width:800px;
+}
+.videoinfo{
+	width:800px;
+	color:white;
+	font-size: 20px;
+}
+.wrapper2 video{
+	width:320px;
+	height:190px;
+}
+.wrapper3 video{
+	width:320px;
+	height:190px;
+}
+.nextvideo{
+	margin-left: 835px;
+	margin-top: -580px;
+}
+.nextvideo h1{
+	font-size: 25px;
+}
+.videoinfo1{
+	width:320px;
+	color:white;
+	font-size: 15px;
+}
+.newsimg{
+	width: 400px;
+	height:320px;
+
+}
+.newsinfo{
+	color:white;
+	margin-left: 420px;
+	font-size: 20px;
+	margin-top: -320px;
+	margin-bottom: 250px;
+}
+.newsinfo:hover{
+	color:red;
+}
+.part{
+	margin-left: 300px;
+	font-size: 25px;
+	color: black;
+}
+.part1{
+	margin-left: 150px;
+	font-size: 30px;
+}
+.loginbox{
+	background-color: #35b997;
+	height: 200px;
+	color: black;
+	margin-left: 12px;
+	width: 1100px;
+}
+.loginbox h1{
+	color: black;
+}
+.videoinfo4{
+	margin-left: 810px;
+	margin-top: -400px;
+	margin-bottom: 300px;
+	font-size: 20px;
+	color: white;
+}
+.videoinfo4 li{
+	font-size: 15px;
+}
+.liveimg1{
+	width:800px;
+}
+.openlink:hover{
+	color: red;
 }
