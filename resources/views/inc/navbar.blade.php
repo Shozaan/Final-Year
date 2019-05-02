@@ -6,39 +6,34 @@
             {{ config('app.name', 'Tourcity') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-            <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px;">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-
             </ul>
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Live<span class="sr-only"></span></a>
+                    <a class="nav-link" href="/">Live</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/popular">Popular</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/stay">Stay</a>
+                    <a class="nav-link" href="/stay">Thing to do</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="/services">Services</a>
+                    <a class="nav-link" href="/about">News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="/posts">Blog</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/posts/create">Create Post</a> </li>
             </ul>

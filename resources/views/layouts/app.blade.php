@@ -12,7 +12,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{asset('/css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -23,7 +25,8 @@
     }
 
     .footer-classic a, .footer-classic a:focus, .footer-classic a:active {
-        color: #ffffff;
+        color: red;
+
     }
     .nav-list li {
         padding-top: 5px;
@@ -50,7 +53,7 @@
         padding: 23px;
         font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.5);
+        color: #111111;
     }
     .social-container .col {
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -94,9 +97,9 @@ a, a:focus , a:hover{
 
 /*ROUNDED CORNER*/
 *{
-  -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 /*CATEGORIES BADGE*/
 .badge {
@@ -137,6 +140,21 @@ a, a:focus , a:hover{
     border: 1px solid rgba(0,0,0,.15);
     border-radius: .25rem;
 }
+.nav-list li a{
+    color:red;
+}
+.section footer-classic context-dark bg-image{
+    height:250px;
+}
+.fa {
+  margin-top:20px;
+  padding: 130px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
 
 </style>
 
@@ -146,17 +164,11 @@ a, a:focus , a:hover{
     @include('inc.navbar')
     <div class="container">
         @include('inc.messages')
-
-
-
         @yield('content')
-
     </div>
-
 </div>
-
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 <script>
     CKEDITOR.replace( 'article-ckeditor' );
@@ -168,7 +180,7 @@ a, a:focus , a:hover{
 
 </body>
 
-<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+<footer class="section footer-classic context-dark bg-image" style="background: #fff; margin-top: 20px;" style="height:250px;">
     <div class="container">
         <div class="row row-30">
             <div class="col-md-4 col-xl-5">
@@ -179,40 +191,37 @@ a, a:focus , a:hover{
                 </div>
             </div>
             <div class="col-md-4">
-                <h5>Contacts</h5>
+                <h5><b>Contacts</b></h5>
                 <dl class="contact-list">
                     <dt>Address:</dt>
                     <dd>Naikap,Kathmandu</dd>
                 </dl>
                 <dl class="contact-list">
                     <dt>email:</dt>
-                    <dd><a href="mailto:#">sujshrestha77@gmail.com</a></dd>
+                    <dd>sujshrestha77@gmail.com</dd>
                 </dl>
                 <dl class="contact-list">
                     <dt>phones:</dt>
-                    <dd><a href="tel:#">+977 9811111111</a> <span>or</span> <a href="tel:#">+977 9800000000</a>
-                    </dd>
+                    <dd>+977 9811111111 or +977 9800000000</dd>
                 </dl>
             </div>
             <div class="col-md-4 col-xl-3">
-                <h5>Links</h5>
+                <h5><b>Links</b></h5>
                 <ul class="nav-list">
                     <li><a href="/">Home</a></li>
                     <li><a href="/popular">Popular</a></li>
                     <li><a href="/stay">Stay</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/services">Services</a></li>
                     <li><a href="/posts">Blogs</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="row no-gutters social-container">
-        <div class="col"><a class="social-inner" href="https://www.facebook.com/"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-        <div class="col"><a class="social-inner" href="https://www.instagram.com/"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
-        <div class="col"><a class="social-inner" href="https://twitter.com/"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-        <div class="col"><a class="social-inner" href="https://mail.google.com/"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+    <div class="sociallogo">
+        <a div class="col" href="https://www.facebook.com/"><img src="images/facebook.svg" height="20px;">Facebook</a>
+        <a div class="col1" href="https://www.instagram.com/"><img src="images/instagram.svg" height="20px;">instagram</a>
+        <a div class="col2" href="https://www.twitter.com/"><img src="images/twitter.svg" height="20px;">twitter</a>
+        <a div class="col3" href="https://www.mail.google.com/"><img src="images/gmail.svg" height="20px;">gmail</a>
     </div>
 </footer>
-
 </html>

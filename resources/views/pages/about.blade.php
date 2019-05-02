@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <h1>{{$title}}</h1>
-    <p>This is about Laravel application from "Kabin Gurung".</p>
     <style>
         div.gallery {
             margin: 5px;

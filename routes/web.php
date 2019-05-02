@@ -16,9 +16,18 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
-Route::get('/services', 'PagesController@services');
+Route::get('/thamel', 'PagesController@thamel');
 Route::get('/popular', 'PagesController@popular');
 Route::get('/stay', 'PagesController@stay');
+Route::get('/anything', 'PagesController@anything');
+Route::get('/basantapur', 'PagesController@basantapur');
+Route::get('/pashupathi', 'PagesController@pashupathi');
+Route::get('/bouddha', 'PagesController@bouddha');
+Route::get('/sawaymbhu', 'PagesController@sawaymbhu');
+Route::get('/sundhara', 'PagesController@thamel');
+Route::get('/durbarmarg', 'PagesController@thamel');
+Route::get('/lazimpat', 'PagesController@thamel');
+Route::get('/chandragiri', 'PagesController@thamel');
 
 Route::resource('posts','PostsController');
 
