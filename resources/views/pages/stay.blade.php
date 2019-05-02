@@ -35,10 +35,13 @@
         </button>
         <div class="dropdown-menu">
             <a class="dropdown-item" href="/thamel">Thamel</a>
-            <a class="dropdown-item" href="/sundhara">Sundhara</a>
-            <a class="dropdown-item" href="lazimpat">Lazimpat</a>
-            <a class="dropdown-item" href="durbarmarg">Durbarmarg</a>
-            <a class="dropdown-item" href="chandragiri">Chandragiri</a>
+            <a class="dropdown-item" href="/lazimpat">Lazimpat</a>
+            <a class="dropdown-item" href="/durbarmarg">Durbarmarg</a>
+            <a class="dropdown-item" href="/basantapur">Basantapur</a>
+            <a class="dropdown-item" href="/pashupathi">Pashupati</a>
+            <a class="dropdown-item" href="/sawaymbhu">Sawaymbhu</a>
+            <a class="dropdown-item" href="/bouddha">Boudhanath</a>
+            <a class="dropdown-item" href="/sundhara">Other</a>
             <div class="dropdown-divider"></div>
         </div>
   </div>

@@ -24,10 +24,10 @@ Route::get('/basantapur', 'PagesController@basantapur');
 Route::get('/pashupathi', 'PagesController@pashupathi');
 Route::get('/bouddha', 'PagesController@bouddha');
 Route::get('/sawaymbhu', 'PagesController@sawaymbhu');
-Route::get('/sundhara', 'PagesController@thamel');
-Route::get('/durbarmarg', 'PagesController@thamel');
-Route::get('/lazimpat', 'PagesController@thamel');
-Route::get('/chandragiri', 'PagesController@thamel');
+Route::get('/sundhara', 'PagesController@sundhara');
+Route::get('/durbarmarg', 'PagesController@durbarmarg');
+Route::get('/lazimpat', 'PagesController@lazimpat');
+Route::get('/chandragiri', 'PagesController@chandragiri');
 
 Route::resource('posts','PostsController');
 
