@@ -91,9 +91,10 @@ body {
   line-height: 1.6;
   color: #3c2f3d;
   text-align: left;
-  /*background-color:rgbA(101, 157, 189);*/
-  /*background-color:rgba(131, 103, 123,0.8);*/
-  background-color:#111111;
+  /* background-color:rgbA(101, 157, 189); */
+  /* background-color:rgba(131, 103, 123,0.8); */
+/* background-color:#374859 ; */
+background-color: #777E8B ;
 }
 
 [tabindex="-1"]:focus {
@@ -618,7 +619,7 @@ pre code {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
-    color: red;
+    color: #fff;
   }
 }
 
@@ -6948,8 +6949,10 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #111111 !important;
+  background-color: #333945 !important;
   height: 120px;
+  opacity: 0.8;
+  color: #fff;
 }
 
 a.bg-primary:hover,
@@ -10508,15 +10511,6 @@ a.text-dark:focus {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
-
-.wrapper{
-    margin:0 auto;
-    width: 1100px;
-  }
-  
-  video{
-    width: 100%
-  }
   .banner{
   	/*margin-left:80px;*/
   	width:950px;
@@ -10636,7 +10630,7 @@ a.text-dark:focus {
   	color:#0d37dd;
   }
 .dropdown{
-	width: 1100px;
+	width: 110px;
 	height: 70px;
 	background-color: #35b997;
 	margin-top: -10px;
@@ -10883,7 +10877,7 @@ margin-left: 548px;
 	font-size: 30px;
 }
 .loginbox{
-	background-color: #35b997;
+	background-color: #333945;
 	height: 200px;
 	color: black;
 	margin-left: 12px;
@@ -10908,3 +10902,48 @@ margin-left: 548px;
 .openlink:hover{
 	color: red;
 }
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+Video {
+position: relative;
+width: 1349px;
+}
+.adjust{
+  margin-left: -135px;
+  
+}
+
+.header-overlay{
+  height:760px;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1;
+  background:rgba(0, 0, 0, 0.6);
+  margin-top:120px;
+}
+.video1 {
+  position: absolute;
+  bottom: 100px;
+  color: #fff;
+  width:800px;
+  padding: 20px;
+  margin-left: 200px;
+}
+
+ .video1 h1{
+    text-align: center;
+    font-size: 60px;
+    
+  }
+  .video1 p{
+    text-align: center;
+
+  }
+

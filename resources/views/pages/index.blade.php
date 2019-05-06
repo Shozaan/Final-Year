@@ -1,11 +1,15 @@
 @extends('layouts.app')
 @section('content')
 <div class="container" >
-    <h1>Enjoy Live Music</h1>
-    <div class=wrapper>
-        <Video Autoplay Controls>
+    <div class="adjust">
+        <Video Autoplay muted loop id="myvideo">
             <Source src="vidoes/video4.mp4" type="video/mp4">
         </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="video1">
+      <h1>Visit Music City</h1>
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
     </div>
 </div>
 <div class="loginbox">

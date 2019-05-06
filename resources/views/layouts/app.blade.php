@@ -25,7 +25,7 @@
     }
 
     .footer-classic a, .footer-classic a:focus, .footer-classic a:active {
-        color: red;
+        color: #fff;
 
     }
     .nav-list li {
@@ -141,7 +141,7 @@ a, a:focus , a:hover{
     border-radius: .25rem;
 }
 .nav-list li a{
-    color:red;
+    color:#fff;
 }
 .section footer-classic context-dark bg-image{
     height:250px;
@@ -180,7 +180,7 @@ a, a:focus , a:hover{
 
 </body>
 
-<footer class="section footer-classic context-dark bg-image" style="background: #fff; margin-top: 20px;" style="height:250px;">
+<footer class="section footer-classic context-dark bg-image" style="background: #333945; margin-top: 20px;" style="height:250px;">
     <div class="container">
         <div class="row row-30">
             <div class="col-md-4 col-xl-5">

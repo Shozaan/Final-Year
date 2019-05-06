@@ -1,11 +1,15 @@
 @extends('layouts.app')
 @section('content')
 <div class="container" >
-    <h1>Enjoy Live Music</h1>
-    <div class=wrapper>
-        <Video Autoplay Controls>
+    <div class="adjust">
+        <Video Autoplay muted loop Controls>
             <Source src="vidoes/vidoe1.mp4" type="video/mp4">
         </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="video1">
+      <h1>Visit Music City</h1>
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
     </div>
 </div>
     <div class="banner">
@@ -22,6 +26,7 @@
             It is located in the northern region of Kathmandu past the government district on Tridevi Marj. </p>
 
             <a class="seemore" href="/services"> Things to do</a>
+            @include('inc.thamel')
          </div>
     </div>
 
@@ -32,6 +37,7 @@
             The liveliest scene is on Lazimpat Road, with sports bars, casual pizzerias, laid-back cafes, and stores selling handicrafts and designer pashminas. </p>
 
             <a class="seemore" href="/services"> Things to do</a>
+             @include('inc.lazimpat')
          </div>
          <div class="destination2">
             <img class="image4" src="images/image5.jpg">
@@ -49,6 +55,7 @@
             It is a famous tourist area after Thamel.  </p>
 
             <a class="seemore" href="/services"> Things to do</a>
+             @include('inc.durbarmarg')
          </div>
     </div>
     <h1><b>Sundhara<b></h1>
@@ -59,6 +66,7 @@
             This place is crowded with best hotels, lodges and shopping malls for shopping and watching latest movies.  </p>
 
             <a class="seemore" href="/services"> Things to do</a>
+             @include('inc.sundhara')
          </div>
          <div class="destination2">
             <img class="image4" src="images/image8.jpg">
@@ -75,6 +83,7 @@
             Chandragiri Hiking Trail can be enjoyed. Transportation facility of cable car is available. </p>
 
             <a class="seemore" href="/services"> Things to do</a>
+             @include('inc.chandragiri')
          </div>
     </div>
     <h1><b>Nagarjun<b></h1>
@@ -84,6 +93,7 @@
                  Nagarjun hill, also described in literature as Vindya Mountain, which is the most popular pilgrimage sites for Hindus as well as Buddhist. 
                 This mountain got its name as Nagarjuna because the sage Nagarjuna had resided in a cave in this place to meditate.</p>
             <a class="seemore" href="/services"> Things to do</a>
+             @include('inc.nagarjun')
          </div>
          <div class="destination2">
             <img class="image4" src="images/image10.jpg">
@@ -100,6 +110,7 @@
                 Due to its close proimity to Kathmandu Airport, several aviation related businesses have their headquarters here. </p>
 
             <a class="seemore" href="/services"> Things to do</a>
+             @include('inc.sinamangal')
          </div>
     </div>
 
